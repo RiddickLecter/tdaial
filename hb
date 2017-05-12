@@ -5,23 +5,23 @@ pacman --noconfirm -Syy
 # Fonts 
 pacman --noconfirm -S ttf-inconsolata 
 
-#Audio 
+# Audio 
 pacman --noconfirm -S pavucontrol pulseaudio pulseaudio-alsa
 
-#NetworkManager 
+# NetworkManager 
 pacman --noconfirm -S networkmanager
 systemctl enable NetworkManager
 
-#Desktop 
+# Desktop 
 pacman --noconfirm -S xorg-server xorg-xinit xf86-video-intel lxqt sddm 
 
-#Media 
+# Media 
 pacman --noconfirm -S vlc alsa-oss alsa-lib lib32-alsa-oss 
 
-#Browser 
+# Browser 
 pacman --noconfirm -S firefox flashplugin 
 
-#Utils 
+# Utils 
 pacman --noconfirm -S redshift leafpad kodi qbittorrent gparted lxterminal youtube-dl screenfetch speedtest-cli cmatrix clamav 
 
 pacman --noconfirm -Syyu 
