@@ -24,7 +24,8 @@ pacman --noconfirm -S firefox flashplugin
 #Utils 
 pacman --noconfirm -S redshift leafpad kodi qbittorrent gparted lxterminal youtube-dl screenfetch speedtest-cli cmatrix clamav 
 
-####################################
+pacman --noconfirm -Syyu 
+pacman --noconfirm -Rns $(pacman -Qdtq)
 
 echo "screenfetch" >> ~/.bashrc 
 echo "Write by Rick."
