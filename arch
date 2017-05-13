@@ -2,6 +2,9 @@
 
 pacman --noconfirm -Syy
 
+# Desktop 
+pacman --noconfirm -S xorg-server xorg-xinit xf86-video-intel lxqt sddm
+
 # Fonts 
 pacman --noconfirm -S ttf-inconsolata 
 
@@ -11,9 +14,6 @@ pacman --noconfirm -S pavucontrol pulseaudio pulseaudio-alsa
 # NetworkManager 
 pacman --noconfirm -S networkmanager
 systemctl enable NetworkManager
-
-# Desktop 
-pacman --noconfirm -S xorg-server xorg-xinit xf86-video-intel lxqt sddm 
 
 # Media 
 pacman --noconfirm -S vlc alsa-oss alsa-lib lib32-alsa-oss 
@@ -26,6 +26,5 @@ pacman --noconfirm -S redshift leafpad kodi qbittorrent gparted lxterminal youtu
 
 pacman --noconfirm -Syyu 
 pacman --noconfirm -Rns $(pacman -Qdtq)
-
-echo "screenfetch" >> ~/.bashrc 
-echo "Write by Rick."
+ 
+echo "Write by Lecter."
