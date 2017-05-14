@@ -16,7 +16,7 @@ pacman --noconfirm -S --needed networkmanager
 systemctl enable NetworkManager
 
 # Media 
-pacman --noconfirm -S --needed vlc alsa-oss alsa-lib lib32-alsa-oss 
+pacman --noconfirm -S --needed vlc alsa-oss alsa-lib lib32-alsa-oss qt4
 
 # Browser 
 pacman --noconfirm -S --needed firefox 
