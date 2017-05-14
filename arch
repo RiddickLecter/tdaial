@@ -26,6 +26,7 @@ pacman --noconfirm -S --needed redshift sakura youtube-dl screenfetch speedtest-
 
 pacman --noconfirm -Syyu
 pacman --noconfirm -Rns $(pacman -Qdtq)
-
-
+echo
+echo
+echo
 echo "By Lecter."
