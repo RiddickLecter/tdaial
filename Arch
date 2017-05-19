@@ -3,7 +3,7 @@
 pacman --noconfirm -Syy
 
 # Desktop 
-pacman --noconfirm -S --needed xorg-server xorg-xinit xf86-video-intel mate lightdm 
+pacman --noconfirm -S --needed xorg-server xorg-xinit xf86-video-intel lxde lxdm 
 
 # Fonts 
 pacman --noconfirm -S --needed ttf-inconsolata 
@@ -11,18 +11,11 @@ pacman --noconfirm -S --needed ttf-inconsolata
 # Audio 
 pacman --noconfirm -S --needed pavucontrol pulseaudio pulseaudio-alsa
 
-# NetworkManager 
-pacman --noconfirm -S --needed networkmanager network-manager-applet
-systemctl enable NetworkManager
-
-# Media 
-pacman --noconfirm -S --needed vlc alsa-oss alsa-lib lib32-alsa-oss qt4
-
 # Browser 
-pacman --noconfirm -S --needed firefox 
+pacman --noconfirm -S --needed  qupzilla
 
 # Utils 
-pacman --noconfirm -S --needed redshift youtube-dl screenfetch speedtest-cli cmatrix clamav git gparted kodi
+pacman --noconfirm -S --needed redshift screenfetch cmatrix clamav kodi
 
 pacman --noconfirm -Syyu
 pacman --noconfirm -Rsn $(pacman -Qqdt)
