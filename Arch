@@ -15,7 +15,7 @@ pacman --noconfirm -S --needed pavucontrol pulseaudio pulseaudio-alsa
 pacman --noconfirm -S --needed  qupzilla
 
 # Utils 
-pacman --noconfirm -S --needed redshift screenfetch cmatrix clamav kodi numix-gtk-theme gvfs 
+pacman --noconfirm -S --needed redshift screenfetch cmatrix clamav kodi arc-gtk-theme arc-icon-theme gvfs 
 
 pacman --noconfirm -Syyu
 pacman --noconfirm -Rsn $(pacman -Qqdt)
